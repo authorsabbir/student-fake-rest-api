@@ -1,0 +1,68 @@
+{
+  "students": [
+    {
+      "id": "68d6",
+      "name": "Sabbir Hussain",
+      "roll": "1",
+      "email": "contact@sabbirhussain.com",
+      "phone": "0571676139",
+      "location": "Farasan Island, Saudi Arabia"
+    },
+    {
+      "name": "Bristi Pramanik",
+      "roll": "1004",
+      "email": "bristi@gmail.com",
+      "phone": "01910203040",
+      "location": "Dhaka",
+      "id": "8a94"
+    },
+    {
+      "id": "621e",
+      "name": "Gule Jannat",
+      "roll": "65",
+      "email": "jannat@gmail.com",
+      "phone": "01910203050",
+      "location": "America"
+    },
+    {
+      "id": "25ad",
+      "name": "Swapan Das",
+      "roll": "20",
+      "email": "swapan@gmail.com",
+      "phone": "0571676746",
+      "location": "London"
+    },
+    {
+      "id": "c938",
+      "name": "MD Sujon Islam",
+      "roll": "105",
+      "email": "sujon@gmail.com",
+      "phone": "0571686139",
+      "location": "Canada"
+    },
+    {
+      "id": "87f5",
+      "name": "Khurshidul Islam Ronggon",
+      "roll": "658",
+      "email": "ronggon@gmail.com",
+      "phone": "0771676139",
+      "location": "London"
+    },
+    {
+      "id": "7ab6",
+      "name": "Arif Sadiq ",
+      "roll": "104",
+      "email": "sadiq@gmail.com",
+      "phone": "0571316139",
+      "location": "Bangladesh"
+    },
+    {
+      "id": "6d62",
+      "name": "Rasel Ahmed ",
+      "roll": "235",
+      "email": "rasel@gmail.com",
+      "phone": "057626139",
+      "location": "Franch"
+    }
+  ]
+}

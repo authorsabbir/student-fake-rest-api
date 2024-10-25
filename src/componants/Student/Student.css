@@ -1,0 +1,177 @@
+/* Main container to display row layout and center content */
+.student_area {
+    display: flex;
+    flex-direction: row;           /* Arrange content in a horizontal row */
+    justify-content: center;       /* Center content horizontally */
+    align-items: center;           /* Center content vertically */
+    gap: 20px;                     /* Space between items */
+    padding: 20px;                 /* Padding inside the container */
+    min-height: 100vh;             /* Full viewport height */
+    background-color: #f3f4f6;     /* Light gray background */
+    flex-wrap: wrap;               /* Allows wrapping on smaller screens */
+  }
+  
+  /* Form container styling */
+  .student_form {
+    background-color: #ffffff;     /* White background for the form */
+    border-radius: 8px;            /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around form */
+    padding: 30px;                 /* Padding inside the form */
+    margin: 20px;                  /* Margin around the form */
+    width: 100%;                   /* Full width on small screens */
+    max-width: 400px;              /* Limit form width to 400px */
+    text-align: center;            /* Center-align text */
+  }
+  
+  /* Title and subtitle styling */
+  .form_title {
+    font-size: 24px;               /* Larger font for title */
+    font-weight: bold;             /* Bold text */
+    color: #333333;                /* Dark gray color */
+    margin-bottom: 8px;            /* Space below title */
+  }
+  
+  .form_subtitle {
+    font-size: 16px;               /* Subtitle font size */
+    color: #6b7280;                /* Lighter gray color */
+    margin-bottom: 20px;           /* Space below subtitle */
+  }
+  
+  /* Form input styling */
+  .student_form form {
+    display: flex;
+    flex-direction: column;        /* Stack inputs vertically */
+    gap: 15px;                     /* Space between input fields */
+  }
+  
+  .student_form input[type="text"],
+  .student_form input[type="email"],
+  .student_form input[type="tel"] {
+    width: 93%;                    /* Adjust width slightly for alignment */
+    padding: 12px;                 /* Padding inside input fields */
+    border: 1px solid #d1d5db;     /* Light gray border */
+    border-radius: 6px;            /* Rounded corners for inputs */
+    font-size: 16px;               /* Input text size */
+  }
+  
+  /* Button styling for creating a new student */
+  .create_button {
+    padding: 12px;                 /* Button padding */
+    font-size: 16px;               /* Button font size */
+    font-weight: bold;             /* Bold button text */
+    color: #ffffff;                /* White text color */
+    background-color: #6366f1;     /* Purple background */
+    border: none;                  /* Remove default border */
+    border-radius: 6px;            /* Rounded corners */
+    cursor: pointer;               /* Pointer cursor on hover */
+  }
+  
+  /* Button styling for updating a student */
+  .update_button {
+    padding: 12px;                 /* Button padding */
+    font-size: 16px;               /* Button font size */
+    font-weight: bold;             /* Bold button text */
+    color: #ffffff;                /* White text color */
+    background-color: #1a9b24;     /* Green background */
+    border: none;                  /* Remove default border */
+    border-radius: 6px;            /* Rounded corners */
+    cursor: pointer;               /* Pointer cursor on hover */
+  }
+  
+  /* Table container styling */
+  .student_data {
+    width: 100%;                   /* Full width on small screens */
+    max-width: 1000px;             /* Limit table container width */
+    margin-top: 30px;              /* Space above table */
+    overflow-x: auto;              /* Horizontal scroll for overflow */
+    background-color: #ffffff;     /* White background */
+    border-radius: 8px;            /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around table */
+    padding: 20px;                 /* Padding inside table container */
+  }
+  
+  /* Table styling */
+  .student_data table {
+    width: 100%;                   /* Full width table */
+    border-collapse: collapse;     /* Remove space between table cells */
+    text-align: left;              /* Left-align text in cells */
+  }
+  
+  .student_data th,
+  .student_data td {
+    padding: 12px 15px;            /* Padding for cells */
+    font-size: 14px;               /* Cell text size */
+    color: #4b5563;                /* Medium gray text color */
+    border-bottom: 1px solid #e5e7eb; /* Light gray bottom border for rows */
+  }
+  
+  .student_data th {
+    background-color: #f3f4f6;     /* Light gray background for headers */
+    font-weight: bold;             /* Bold text for headers */
+    color: #111827;                /* Darker text color */
+    text-transform: uppercase;     /* Uppercase headers */
+  }
+  
+  .student_data tr:nth-child(even) {
+    background-color: #f9fafb;     /* Alternate row background color */
+  }
+  
+  /* Hover effect for rows */
+  .student_data tr:hover {
+    background-color: #e5e7eb;     /* Light gray on row hover */
+    cursor: pointer;               /* Pointer cursor on hover */
+  }
+  
+  /* Action buttons styling */
+  .student_data button {
+    padding: 6px 12px;             /* Button padding */
+    font-size: 12px;               /* Smaller font size */
+    font-weight: 600;              /* Semi-bold text */
+    color: #ffffff;                /* White text color */
+    border: none;                  /* Remove default border */
+    border-radius: 5px;            /* Rounded corners */
+    margin-right: 5px;             /* Space between buttons */
+    cursor: pointer;               /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Edit button style */
+  .student_data button:first-of-type {
+    background-color: #3b82f6;     /* Blue background */
+  }
+  
+  .student_data button:first-of-type:hover {
+    background-color: #2563eb;     /* Darker blue on hover */
+  }
+  
+  /* Delete button style */
+  .student_data button:last-of-type {
+    background-color: #ef4444;     /* Red background */
+  }
+  
+  .student_data button:last-of-type:hover {
+    background-color: #dc2626;     /* Darker red on hover */
+  }
+  
+  /* Responsive styling for mobile devices */
+  @media (max-width: 768px) {
+    .student_area {
+      flex-direction: column;      /* Stack items vertically on small screens */
+      align-items: center;         /* Center items */
+    }
+  
+    .form_title {
+      font-size: 20px;             /* Smaller font size for title */
+    }
+  
+    .student_data th,
+    .student_data td {
+      font-size: 12px;             /* Smaller font for table cells */
+      padding: 10px;               /* Adjust cell padding */
+    }
+  
+    .student_data button {
+      padding: 5px 10px;           /* Smaller button padding */
+    }
+  }
+  
